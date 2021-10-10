@@ -5,7 +5,7 @@ devise_for :users
   #フォロー機能
   resources :users do
     resource :relationships, only: [:create, :destroy]#今回は作成と解除のみ
-    get :followings, on: :member#フォローしてる人の表示
+    get :following, on: :member#フォローしてる人の表示
     get :followers, on: :member#フォローしてる人の表示
   end
 

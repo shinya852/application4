@@ -1,4 +1,4 @@
-<% if current_user.already_favorited?(book) %><!--←すでに(・∀・)ｲｲﾈ!!をしているか否か-->
+<% if current_user.already_favorited?(book) %><!--←すでにｲﾈ!!をしているか否か-->
  <%= link_to book_favorites_path(book), method: :delete do %>
   <i class="fas fa-heart"></i><!--ハートマークの追加-->
  <% end %>
